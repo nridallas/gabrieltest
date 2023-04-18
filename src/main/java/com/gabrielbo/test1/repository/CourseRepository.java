@@ -13,4 +13,6 @@ public interface CourseRepository extends CrudRepository<CourseEntity, Integer> 
 
     CourseEntity findById(int id);
     List<CourseEntity> findByAuthor(String author);
+
+    List<CourseEntity> findAll();
 }
